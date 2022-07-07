@@ -12,7 +12,6 @@ int dfs(int M, int N, int y, int x) {
         return 1;
     }
     if (visit[y][x]) return dp[y][x];
-
     visit[y][x] = true;
     for (int i = 0; i < 4; i++) {
         int ny = y + dir[i][0];
